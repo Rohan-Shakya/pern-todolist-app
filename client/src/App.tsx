@@ -1,9 +1,12 @@
 import { Component } from 'react';
-import { connect } from 'react-redux';
-import './App.css';
+// Components
 import Input from './components/Input/Input';
 import TodoList from './components/TodoLists/TodoList';
+// Redux
+import { connect } from 'react-redux';
 import { getTodos } from './redux/todo/todo.actions';
+// Styles
+import './App.css';
 
 type Props = {
   getTodos: () => void;

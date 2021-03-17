@@ -1,8 +1,11 @@
+// Components
+import EditTodo from '../EditTodo/EditTodo';
+// Redux
 import { connect } from 'react-redux';
 import { deleteTodo } from '../../redux/todo/todo.actions';
+// Reselect
 import { createStructuredSelector } from 'reselect';
 import { selectTodos } from '../../redux/todo/todo.selectors';
-import EditTodo from '../EditTodo/EditTodo';
 
 type Props = {
   todos: Todo[];
